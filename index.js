@@ -1,0 +1,1 @@
+alert("Welcome To Newton House Hostel Website...")
