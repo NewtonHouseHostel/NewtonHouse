@@ -2,18 +2,30 @@
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
+  overflow-x: hidden;
 }
 
+/* except header footer*/
+.bodyview{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+
+
+
 body{
-  background-color: #eee;
+  background-color: white;
 }
 
 .header {
   background-color: rgba(154, 51, 51, 1);
   height: 22vh;
-  width: 100vw;
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
   
 }
 
@@ -24,7 +36,8 @@ body{
 }
 
 .nav {
-  width: 100vw;
+  /* width: 100vw; */
+  width: 100%;
   align-items: top;
   display: flex;
   justify-content: space-between;
@@ -62,7 +75,8 @@ body{
 .menu {
   float: left;
   overflow: hidden;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 100%;
 }
 
 .topnav {
@@ -93,14 +107,23 @@ body{
   color: yellow;
 }
 
+.icon {
+  display: none;
+  text-decoration: none;
+}
+
+/* header ends*/
 .nhimg{
   padding-top: 2vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 100vw;
+  width: 80vw;
   height: 75vh;
-  overflow: hidden
+  gap: 2vh;
+
 }
 
 .nhimg img{
@@ -109,48 +132,70 @@ body{
 
 }
 
+.mission{
+padding: 5vw;
+padding-bottom: 2.5vw;
+border: 1px solid rgba(184, 129, 129, 1);
+width: 80vw;  
+}
+
+.mission p{
+  padding-left: 10vw;
+}
+
+.mission h1 , .h1fonter{
+  color: rgba(154, 51, 51, 1);
+  font-family: "Oregano", cursive;
+
+}
+
+
+
+p{
+  line-height: 3vh;
+  font-family: "Montserrat", sans-serif;
+}
 
 .container{
-  background-color: #eee;
-  width: 100vw;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.txt{
-  background-color: white;
-  width: 45vw;
-  border: none;
-  padding: 2vw;
-  border-radius: 2vh;
-  margin: 5vh 0vh 5vh 2vw;
-  font-size: 3.5vh;
-}
-
-.principal{ 
-  margin: 5vh 0vh 5vh 2vw;
-  width: 45vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
   
+  margin-top: 5vh;
+  padding: 5vw;
+  padding-bottom: 2.5vw;
+  width: 80vw;
+  align-content: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid rgba(184, 129, 129, 1);
+ 
 }
 
-.principal img{
-  width: 45vw;
-  height: 45vh;
-  position: relative;
+.profiles{
+  padding-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.profiles img{
+  width: 30vw;
+}
+
+
+
+
+.admission{
+
+  padding: 5vw;
+  
+  border: 1px solid rgba(184, 129, 129, 1);
+  
+  width: 80vw;
 
 }
 
-.principal #profbhavuk{
-   object-fit: scale-down;
-}
-
-
+/*footer starts*/
 .footer {
   background-color: rgba(165, 42, 42, 0.312);
   display: flex;
@@ -158,9 +203,13 @@ body{
   padding: 2vw;
   gap: 1vw;
   background: -webkit-linear-gradient(#9f6464, #eee, #9f6464);
-  height: fit-content;
-  width: 100vw;
+  width: 100%;
+ 
   
+}
+
+footer a{
+  color: blue;
 }
 
 .sitemap{
@@ -176,21 +225,11 @@ body{
 
 }
 
-.copy {
-  padding-top: 20px;
-}
 
-
-
-.icon {
-  display: none;
-  text-decoration: none;
-}
 
 /*Responsive styling starts HERE*/
 
 @media screen and (max-width: 600px) {
-  
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -239,21 +278,49 @@ body{
     width: 20vw;
   }
 
+  /*footer*/
+  .footer{
+    flex-direction: column;
+    bottom: 0;
+    gap: 2vh;
+    width: 100%;
+    height: fit-content;
+
+  }
+
+  .sitemap{
+    display: grid;
+    gap: 2vh;
+  }
+  
+  .copy {
+  padding-top: 20px;
+}
+/*footer ends*/
   
   .container{
     display: block;
    height: fit-content;
-   width: 100%;
+   width: 98vw;
    gap: 2vh;
    margin-bottom:10vh ;
-  }
-
-  .txt{
-    width: 98%;
-    font-size: small;
+   font-size: small;
 
   }
 
+  .mission{
+
+    padding: 5vw;
+    width: 98vw;
+  }
+
+  p{
+    font-size: medium;
+    line-height: 3vh;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+/* 
   .principal{
     border: none;
     height: fit-content;
@@ -275,20 +342,25 @@ body{
     
 
 
-  }
+  } */
 
-   .footer{
+  .profiles{
+    display:flex;
     flex-direction: column;
-    bottom: 0;
     gap: 2vh;
-    width: 100%;
-    height: fit-content;
+
+  }
+  .profiles img{
+    width: 80vw;
+  }
+
+  .admission{
+    font-size: small;
+    width: 98vw;
 
   }
 
-  .sitemap{
-    display: grid;
-    gap: 2vh;
-  }
+
+
 
 }

@@ -4,78 +4,64 @@
   box-sizing: border-box;
 }
 
-.header{
-
- background-color: rgba(154, 51, 51, 1);
- height: 115px;
-
+.header {
+  background-color: rgba(154, 51, 51, 1);
+  height: 22vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  
 }
 
-.image{
-  background-size: cover;
-
-  border: none;
-  border-radius: 10px;
+.image {
+  border-radius: 4px;
+  height: 22vh;
+  width: 11vw;
 }
 
-.nav{
-  width: 100%;
+.nav {
+  width: 100vw;
   align-items: top;
   display: flex;
   justify-content: space-between;
   text-align: center;
   
 }
-.nav h1{
- 
+.nav h1 {
+  margin-top: 0vh;
   padding-top: 0px;
-  padding-bottom: 1px;
-  font-size: 400%;
-  font-weight: bolder;
+  font-size: 5vw;
   font-family: "Sansita", sans-serif;
   font-weight: 900;
   font-style: italic;
   letter-spacing: 3px;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.44),rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.39));
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 0.44),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.39)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
-.nav h4{
+.nav h4 {
+  
   color: white;
   font-family: "Sansita", sans-serif;
+  font-size: 1.25vw;
   letter-spacing: 1px;
   padding-bottom: 2px;
 }
 
-.menu{
+.menu {
   float: left;
   overflow: hidden;
-  width: 100%;
-
+  width: 100vw;
 }
 
-/* Page content */
-.material {
- 
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .material {
-  
-}
-
-.menu li ul{
-  list-style-type: none;
+.topnav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,42 +70,40 @@
   background-color: rgba(184, 129, 129, 1);
 }
 
-.menu li ul a{
+.topnav a {
   text-decoration: none;
   color: white;
   font-family: "Oregano", cursive;
   font-size: larger;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
-.menu li ul a:hover{
+.topnav a:hover {
   cursor: pointer;
   color: rgba(0, 0, 255, 0.487);
   transform: scale(1.5);
-  
- 
 }
 
-.menu li ul a#notice{
+.topnav a#notice {
   text-decoration: none;
   color: yellow;
 }
 
-.content{
-  padding: 30px ;
-  padding-top: 100px;
-  margin: 10px;
-  
+#map{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
-.content h2{
+h2{
   font-family: "Salsa", cursive;
   padding: 10px;
   padding-top: 50px;
 
 }
 
-.content p{
+.text p{
   padding: 20px;
   margin-top: 20px;
   border: none;
@@ -128,10 +112,7 @@
   width: 400px;
 }
 
-#map{
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .location{
   border: 5px solid black;
@@ -140,27 +121,133 @@
   padding-top: 40px;
   
 }
-
-footer{
+.footer {
+  background-color: rgba(165, 42, 42, 0.312);
   display: flex;
   justify-content: space-between;
-  float: left;
-}
-
-.follow{margin-left: 50px;
+  padding: 2vw;
+  gap: 1vw;
+  background: -webkit-linear-gradient(#9f6464, #eee, #9f6464);
+  height: fit-content;
+  width: 100vw;
   
+}
+
+.sitemap{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+
+.backtop a {
+  text-decoration: none;
+  color: black;
 
 }
-/* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
+
+
+.icon {
+  display: none;
   text-decoration: none;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+
+
+
+
+@media screen and (max-width: 600px) {
+  
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+
+.topnav.responsive {
+  
+  background-color: rgba(184, 129, 129, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height : 5vh;
+}
+.topnav.responsive a.icon {
+  position: absolute;
+  float: right;
+  right: 5%;
+}
+
+.topnav.responsive a {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+
+
+
+  .nav h1{
+    display: block;
+    
+  }
+
+  .header{
+    height: 10vh;
+    
+
+  }
+
+  .image{
+    height: 10vh;
+    width: 20vw;
+  }
+
+
+  #map{
+    width: 100vw;
+    display: block;
+    height: 150vh;
+   
+   
+  
+  }
+
+  .text p{
+     width: 100%;
+   
+  }
+
+  .location{
+    border: none;
+    border-radius: 5px;
+    width: 95vw;
+    height: 50vh;
+   
+  }
+  
+  .location iframe{
+    width: 95vw;
+
+  }
+
+  
+
+
+  .footer{
+    flex-direction: column;
+    bottom: 0;
+    gap: 2vh;
+    width: 100%;
+    height: fit-content;
+
+  }
+
+  .sitemap{
+    display: grid;
+    gap: 2vh;
+  }
 }

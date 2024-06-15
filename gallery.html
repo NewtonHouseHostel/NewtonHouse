@@ -6,55 +6,59 @@
     <title>Newton House | Gallery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oregano&family=Sansita:ital,wght@1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Oregano&family=Sansita:ital,wght@1,900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="gallery.css" />
+
   </head>
   <body>
     <header>
       <div class="header">
         <nav class="nav">
-          <div>
-            <img src="PU Logo.png" width="200px" height="115px" class="image" />
-          </div>
-          
-          <div>
-            <h1>Newton House Hostel</h1>
-            <h4>Patna Science College, Patna University</h4>
-          </div>
-
-          <div>
-            <img src="NH Logo.jpg" width="200px" height="115px" class="image" />
-          </div>
-        </nav>
-
-        <nav>
-          <div class="menu" id="navbar">
-            <li>
-              <ul>
-                <a href="index.html">Home</a>
-                <a id="pageName" href="gallery.html">Gallery</a>
-                <a href="alumni.html">Alumnis</a>
-                <a href="about.html">About</a>
-                <a href="supt.html">Superintendents</a>
-                <a href="login.html">Login/Signup</a>
-                <a id="notice" href="notice.html">! Notice !</a>
-              </ul>
-            </li>
-          </div>
-        </nav>
-      </div>
+        <div>
+          <img src="PU Logo.png" class="image">
+        </div>
+  
+        <div class="head-text" >
+          <h1>Newton House Hostel</h1>
+          <h4>Patna Science College, Patna University</h4>
+          <h4>Ashok Rajpath, Patna, 800005</h4>
+        </div>
+  
+        <div>
+          <img src="NH Logo.jpg" class="image">
+        </div>
+         </nav>
+        </div>
+        
+       
+     
+  
+      <nav>
+        <div class="menu" id="navbar">
+            <div class="topnav" id="mytopnav" >
+              <a href="index.html">Home</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="alumni.html">Alumnis</a>
+              <a href="about.html">About</a>
+              <a href="supt.html">Superintendents</a>
+              <a href="login.html">Login/Signup</a>
+              <a id="notice" href="notice.html">! Notice !</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              
+            </div>
+          </ul>
+        </div>
+      </nav> 
+     </div>
     </header>
 
     <div class="container">
       <div class="content">
-        <img src="Gallery/8.jpg" alt="" srcset="" />
+        <img loading="lazy" src="Gallery/8.jpg" alt="" srcset="" />
       </div>
       <div class="content">
         <img loading="lazy" src="Gallery/9.jpg" alt="" srcset="" />
@@ -146,6 +150,39 @@
         <img loading="lazy" src="Gallery/19.jpg" alt="" srcset="" />
       </div>
     </div>
+
+    <footer>
+      <div class="footer">
+
+        <div class="copy">
+        <p>Copyright© Newton House 2024</p>
+      </div>
+
+      <div class="sitemap">
+          <div><p>Important Links</p></div>
+
+          <div><a href="https://patnasciencecollege.ac.in/">Patna Science College</a></div>
+
+          <div><a href="https://pup.ac.in/#">Patna University</a></div>
+          <div><a href="https://www.ugc.gov.in/">University Grants Commision</a></div>  
+      </div>
+
+      <div class="mail">
+        <p> Author: Nilesh Kumar <br>
+          <a href="mailto:nileshkumar3443@gmail.com">nileshkumar3443@gmail.com</a></p>
+      </div>
+
+      <div class="backtop">
+        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+          <path d="M18 4L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M12 8V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M16 12C16 12 13.054 8.00001 12 8C10.9459 7.99999 8 12 8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg></a>
+        
+      </div>
+
+    </div> 
+    </footer>
 
     <script src="gallery.js"></script>
   </body>
