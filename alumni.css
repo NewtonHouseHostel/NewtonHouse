@@ -98,6 +98,29 @@ body{
   text-decoration: none;
 }
 
+
+.main-body{
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.alumnis li{
+    padding: 1vh;
+  
+  
+  
+}
+
+.h1fonter{
+  color: rgba(154, 51, 51, 1);
+  font-family: "Oregano", cursive;
+
+}
+
+
 .footer {
   background-color: rgba(165, 42, 42, 0.312);
   display: flex;

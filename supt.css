@@ -98,6 +98,32 @@ body{
   text-decoration: none;
 }
 
+.main-body{
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 10vw ;
+}
+
+.h1fonter{
+  color: rgba(154, 51, 51, 1);
+  font-family: "Oregano", cursive;
+  font-weight: lighter;
+
+}
+
+.supt-cornor{
+  display: grid;
+  grid-template-columns: 30vw 30vw;
+  gap: 2vw;
+}
+
+.fb-post{
+  padding-top: 5vh;
+}
+
 .footer {
   background-color: rgba(165, 42, 42, 0.312);
   display: flex;
@@ -173,6 +199,10 @@ body{
   .image{
     height: 10vh;
     width: 20vw;
+  }
+
+  .supt-cornor{
+    display: block;
   }
 
   .footer{

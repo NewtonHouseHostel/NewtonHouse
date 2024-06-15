@@ -1,3 +1,28 @@
 /* Notice styling for only content
 
 */
+
+.main-body{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 10vw ;
+}
+
+.notices{
+   
+    width: 80vw;
+
+}
+
+.notice{
+    text-decoration: none;
+    padding-top: 5vh;
+}
+.h1fonter{
+    color: rgba(154, 51, 51, 1);
+    font-family: "Oregano", cursive;
+  
+  }
+  

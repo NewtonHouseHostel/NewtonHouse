@@ -212,6 +212,12 @@ footer a{
   color: blue;
 }
 
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
 .sitemap{
   display: flex;
   flex-direction: column;
