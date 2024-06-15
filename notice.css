@@ -2,6 +2,8 @@
 
 */
 
+body{
+    overflow-x:hidden;}
 .main-body{
     width: 98vw;
     display: flex;
